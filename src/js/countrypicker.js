@@ -1,3 +1,11 @@
+function mapCountries(num_id) {
+    for (let i = 0; i < getJsonMaxSize(); i++) {
+        var x = document.getElementsByClassName("ar-country")[num_id];
+        var option = document.createElement("option");
+        option.text = getCountryName(i);
+        x.add(option, x[0]);    
+    } 
+}
 
 function getCountryCode(select) {
     return jsonCountries[select]["code"];
