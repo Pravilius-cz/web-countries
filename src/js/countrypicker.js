@@ -3,7 +3,7 @@ function mapCountries(num_id) {
         var x = document.getElementsByClassName("ar-country")[num_id];
         var option = document.createElement("option");
         option.text = getCountryName(i);
-        x.add(option, x[0]);    
+        x.add(option, x[i]);//reverse order 0 before--   
     } 
 }
 
