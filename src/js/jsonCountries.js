@@ -1,5 +1,4 @@
-
-export const jsonCountries = [ 
+const jsonCountries = [ 
     {name: 'Afghanistan', code: 'AF'},
     {name: 'Åland Islands', code: 'AX'},
     {name: 'Albania', code: 'AL'},

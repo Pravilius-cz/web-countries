@@ -1,4 +1,3 @@
-import { jsonCountries } from "./src";
 
 function getCountryCode(select) {
     return jsonCountries[select]["code"];

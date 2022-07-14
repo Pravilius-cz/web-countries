@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="src/js/countrypicker.js"></script>
+    <script src="src/js/jsonCountries.js"></script>
 </head>
 
 
 <body>
     <select class="ar-country"></select>
 
-    <button type="button" onclick="myFunction()">Insert option</button>
-
     <script>
-    function myFunction() {
-        var x = document.getElementsByClassName("ar-country");
-        var option = document.createElement("option");
-        option.text = "Kiwi";
-        x.add(option, x[0]);
+    mapCountries(0);
+    function mapCountries(num_id) {
+        for (let i = 0; i < getJsonMaxSize(); i++) {
+            var x = document.getElementsByClassName("ar-country")[num_id];
+            var option = document.createElement("option");
+            option.text = getCountryName(i);
+            x.add(option, x[0]);    
+        } 
     }
     </script>
 </body>
