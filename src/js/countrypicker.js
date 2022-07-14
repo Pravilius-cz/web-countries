@@ -1,7 +1,5 @@
 import { jsonCountries } from "./src";
 
-let select = 0;
-
 function getCountryCode(select) {
     return jsonCountries[select]["code"];
 }
@@ -13,3 +11,5 @@ function getCountryName(select) {
 function getJsonMaxSize() {
     return Object.keys(jsonCountries).length;
 }
+
+
